@@ -7,7 +7,8 @@ Lint Rules for Android.
 Android Lint Rules includes several rules for Android platform.
 
 ## Contents: ##
-* Background Vector : Detect vectors used for background 
+* Background Vector : Detect vectors used for background
+* Hardcoded Value : Detect hardcoded values used for dimension
 
 # Installation
  - To implement **Android Lint Rules** to your Android project via Gradle, you need to add JitPack repository to your root build.gradle.
@@ -22,7 +23,7 @@ allprojects {
  - After adding JitPack repository, you can add **Android Lint Rules** dependency to your app level build.gradle.
 ```gradle
 dependencies {
-    implementation "com.github.bsobe:androidlintrules:1.0.0"
+    implementation "com.github.bsobe:androidlintrules:1.0.1"
 }
 ```
 
