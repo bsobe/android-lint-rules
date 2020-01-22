@@ -16,3 +16,6 @@ android {
 dependencies {
     lintPublish project(':lintrules')
 }
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.bsobe'
