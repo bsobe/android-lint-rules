@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+apply plugin: "kotlin"
+
+dependencies {
+    compileOnly "com.android.tools.lint:lint-api:26.5.3"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    testImplementation "com.android.tools.lint:lint:26.5.3"
+    testImplementation "com.android.tools.lint:lint-tests:26.5.3"
+    testImplementation "com.google.truth:truth:1.0"
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+
+jar {
+    manifest {
+        attributes('Lint-Registry-v2': 'com.bsobe.lintrules.IssueRegistry')
+    }
+}
